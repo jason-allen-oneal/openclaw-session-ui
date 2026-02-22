@@ -113,7 +113,7 @@ export class GatewayClient {
       role: 'operator',
       // OPSEC hardening: least privilege scopes.
       // Session UI needs read (list/history) + write (send/abort/patch).
-      scopes: ['operator.read', 'operator.write'],
+      scopes: ['operator.read', 'operator.write', 'operator.admin', 'operator.approvals', 'operator.pairing'],
       device: undefined,
       caps: [],
       auth,
